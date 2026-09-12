@@ -7,6 +7,19 @@ func QuadB(x, y int) {
 		return
 	}
 
+	if x == 1 {
+		for i := 0; i < y; i++ {
+			if i == 0 {
+				fmt.Println("/")
+			} else if i == y-1 {
+				fmt.Println("\\")
+			} else {
+				fmt.Println("*")
+			}
+		}
+		return
+	}
+
 	for i := 0; i < y; i++ {
 		if i == 0 {
 			fmt.Print("/")
