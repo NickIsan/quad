@@ -13,13 +13,13 @@ func QuadC(x, y int) {
 				z01.PrintRune('A')
 			} else if row == 0 && col == x-1 {
 				z01.PrintRune('A')
-			} else if row == 0 && col == y-1 {
+			} else if row == y-1 && col == 0 {
 				z01.PrintRune('C')
-			} else if row == x-1 && col == y-1 {
+			} else if row == y-1 && col == x-1 {
 				z01.PrintRune('C')
 			} else if row == 0 {
 				z01.PrintRune('B')
-			} else if row == y-1 {
+			} else if row == 0 || row == y-1 {
 				z01.PrintRune('B')
 			} else if col == 0 || col == x-1 {
 				z01.PrintRune('B')
