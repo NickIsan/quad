@@ -1,0 +1,55 @@
+package piscine
+
+import "fmt"
+
+func QuadB(x, y int) {
+	if x <= 0 || y <= 0 {
+		return
+	}
+
+	if x == 1 {
+		for i := 0; i < y; i++ {
+			if i == 0 {
+				fmt.Println("/")
+			} else if i == y-1 {
+				fmt.Println("\\")
+			} else {
+				fmt.Println("*")
+			}
+		}
+		return
+	}
+
+	for i := 0; i < y; i++ {
+		if i == 0 {
+			fmt.Print("/")
+
+			for j := 0; j < x-2; j++ {
+				fmt.Print("*")
+			}
+
+			fmt.Print("\\")
+			fmt.Println()
+
+		} else if i == y-1 {
+			fmt.Print("\\")
+
+			for j := 0; j < x-2; j++ {
+				fmt.Print("*")
+			}
+
+			fmt.Print("/")
+			fmt.Println()
+
+		} else {
+			fmt.Print("*")
+
+			for j := 0; j < x-2; j++ {
+				fmt.Print(" ")
+			}
+
+			fmt.Print("*")
+			fmt.Println()
+		}
+	}
+}
