@@ -3,5 +3,5 @@ package main
 import "piscine"
 
 func main() {
-	piscine.QuadB(1, 5)
+	piscine.QuadB(1, 1)
 }
