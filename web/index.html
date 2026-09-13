@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quad Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<h1>Quad Generator</h1>
+
+	<div class="generator">
+		<div class="controls">
+			<label for="quadType">Quad Type</label>
+			<select id="quadType">
+				<option value="A">QuadA</option>
+				<option value="B">QuadB</option>
+				<option value="C">QuadC</option>
+				<option value="D">QuadD</option>
+				<option value="E">QuadE</option>
+			</select>
+
+			<label for="width">Width</label>
+			<input type="number" id="width">
+
+			<label for="height">Height</label>
+			<input type="number" id="height">
+
+			<button id="generate">Generate</button>
+		</div>
+
+		<div class="output-section">
+			<h2>Output</h2>
+
+			<div id="output-box">
+				<pre id="output"></pre>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
