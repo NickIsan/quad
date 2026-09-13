@@ -183,6 +183,46 @@ o---o
 
 The same approach can be used to test `QuadB`, `QuadC`, `QuadD`, and `QuadE`.
 
+## Website
+
+The project also includes a local web interface called **Quad Generator** for testing and previewing the different Quad functions.
+
+The website allows you to:
+
+- Select `QuadA`, `QuadB`, `QuadC`, `QuadD`, or `QuadE`
+- Enter a width and height
+- Generate and preview the resulting rectangle
+
+### Running the Website
+
+From the root of the repository, run:
+
+```bash
+go run ./cmd/server
+```
+
+Then open the following address in your browser:
+
+```text
+http://localhost:8080
+```
+
+### WSL
+
+If you are using WSL and `go run ./cmd/server` produces `cgo` compilation errors, run:
+
+```bash
+CGO_ENABLED=0 go run ./cmd/server
+```
+
+Then open:
+
+```text
+http://localhost:8080
+```
+
+To stop the website server, press `Ctrl+C` in the terminal where it is running.
+
 ## Team
 
 - Marios Agora
