@@ -134,12 +134,25 @@ func generateQuadD(x, y int) string {
 
 	for row := 0; row < y; row++ {
 		for col := 0; col < x; col++ {
-			if row == 0 || row == y-1 {
-				if col == 0 || col == x-1 {
+
+			if row == 0 {
+				if col == 0 {
 					result.WriteRune('A')
+				} else if col == x-1 {
+					result.WriteRune('C')
 				} else {
 					result.WriteRune('B')
 				}
+
+			} else if row == y-1 {
+				if col == 0 {
+					result.WriteRune('A')
+				} else if col == x-1 {
+					result.WriteRune('C')
+				} else {
+					result.WriteRune('B')
+				}
+
 			} else {
 				if col == 0 || col == x-1 {
 					result.WriteRune('B')
