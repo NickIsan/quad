@@ -24,10 +24,15 @@ If `x` or `y` is less than or equal to zero, the function prints nothing.
 ```text
 quad/
 ├── README.md
+├── quadA.go
+├── quadB.go
+├── quadC.go
+├── quadD.go
+├── quadE.go
 ├── go.mod
 ├── go.sum
 ├── QuadA/
-│   ├── quadA.go
+│   ├
 │   ├── test1/
 │   │   └── main.go
 │   ├── test2/
@@ -37,22 +42,22 @@ quad/
 │   └── test4/
 │       └── main.go
 ├── QuadB/
-│   ├── quadB.go
+│   ├
 │   ├── test1/
 │   │   └── main.go
 │   └── ...
 ├── QuadC/
-│   ├── quadC.go
+│   ├
 │   ├── test1/
 │   │   └── main.go
 │   └── ...
 ├── QuadD/
-│   ├── quadD.go
+│   ├
 │   ├── test1/
 │   │   └── main.go
 │   └── ...
 └── QuadE/
-    ├── quadE.go
+    ├
     ├── ...
     │   └── ...
     └── ...
