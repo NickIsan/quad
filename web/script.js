@@ -24,6 +24,18 @@ generateButton.addEventListener("click", async function () {
 			styledResult += '<span class="horizontal">-</span>'
 		} else if (char === "|") {
 			styledResult += '<span class="vertical">|</span>'
+		} else if (char === "A") {
+			styledResult += '<span class="letter-a">A</span>'
+		} else if (char === "B") {
+			styledResult += '<span class="letter-b">B</span>'
+		} else if (char === "C") {
+			styledResult += '<span class="letter-c">C</span>'
+		} else if (char === "/") {
+			styledResult += '<span class="slash">/</span>'
+		} else if (char === "\\") {
+			styledResult += '<span class="slash">\\</span>'
+		} else if (char === "*") {
+			styledResult += '<span class="star">*</span>'
 		} else {
 			styledResult += char
 		}

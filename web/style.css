@@ -30,6 +30,7 @@ h1 {
 .controls {
 	display: flex;
 	flex-direction: column;
+	padding-top: 105px;
 }
 
 label {
@@ -120,4 +121,24 @@ button:hover {
 
 .vertical {
 	color: #34d399;
+}
+
+.letter-a {
+	color: #60a5fa;
+}
+
+.letter-b {
+	color: #f59e0b;
+}
+
+.letter-c {
+	color: #a78bfa;
+}
+
+.slash {
+	color: #60a5fa;
+}
+
+.star {
+	color: #f59e0b;
 }
